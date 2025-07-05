@@ -1,0 +1,29 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 2rem;
+  padding: 10px;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.grid li {
+  list-style: none;
+}
+
+/* 📱 Small screens: 1 column */
+@media screen and (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 5px;
+  }
+}
+
+/* 📱 Tablets: 2 columns */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

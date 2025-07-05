@@ -1,0 +1,31 @@
+.footer {
+  background-color: #111;
+  color: #ccc;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  border-top: 1px solid #333;
+}
+
+.iconList {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0 0 1rem 0;
+  list-style: none;
+}
+
+.iconItem a {
+  color: #ccc;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.iconItem a:hover {
+  color: #e50914;
+}
+
+.copyText {
+  font-size: 0.85rem;
+}

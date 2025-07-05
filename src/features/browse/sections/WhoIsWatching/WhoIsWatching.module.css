@@ -1,0 +1,17 @@
+.title {
+  font-size: clamp(1.5rem, 3.5vw, 4rem); 
+  font-weight: inherit;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  line-height: 1.2;
+  padding: 0 1rem; 
+  word-break: break-word;
+}
+
+
+@media screen and (max-width: 480px) {
+  .title {
+    gap: 4rem;
+  }
+}
