@@ -1,7 +1,8 @@
+import ProfileContainer from "@/features/profile";
 import React from "react";
 
 const ProfileImage = () => {
-  return <div>Profile Page</div>;
+  return <ProfileContainer />;
 };
 
 export default ProfileImage;
