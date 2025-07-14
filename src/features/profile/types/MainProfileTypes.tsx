@@ -1,7 +1,10 @@
+import { ReactNode } from "react";
+
 export type CTA = {
   label: string;
-  icon: string;
+  icon: ReactNode;
   route: string;
+  variant?:"primary" | "secondary";
 };
 
 export type HeroBannerTypes = {
