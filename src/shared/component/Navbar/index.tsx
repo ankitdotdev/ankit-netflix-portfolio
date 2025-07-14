@@ -39,14 +39,14 @@ const Navbar = () => {
   const { id } = useParams();
   const pathName = usePathname();
   const router = useRouter();
-  const [profile, setProfile] = useState("/rolesImages/blue.png");
+  const [profile, setProfile] = useState("");
   const [isOpen, setIsOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const browseButtonRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const profileImage = ProfilseData.find((profile) => profile.label === id);
+    const profileImage = ProfilseData.find((profile) => profile.slug === id);
     if (profileImage) {
       setProfile(profileImage.image);
     }
@@ -150,7 +150,7 @@ const Navbar = () => {
       {/* Right - Profile */}
       <div className={`${styles.navRight} ${styles.profile}`}>
         <Image
-          src={profile}
+         src={profile || "/rolesImages/blue.png"} 
           alt="Profile Logo"
           height={40}
           width={40}

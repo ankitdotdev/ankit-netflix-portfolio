@@ -1,9 +1,29 @@
-import type { Metadata } from "next";
+// app/layout.tsx
 import "./globals.css";
 import Navbar from "@/shared/component/Navbar";
 import Footer from "@/shared/component/Footer";
 
-export const metadata: Metadata = {
+import { Roboto, Bebas_Neue, Black_Ops_One } from "next/font/google";
+
+const roboto = Roboto({
+  weight: ["400", "500", "700"],
+  subsets: ["latin"],
+  variable: "--font-roboto",
+});
+
+const bebas = Bebas_Neue({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-bebas",
+});
+
+const blackOps = Black_Ops_One({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-blackops",
+});
+
+export const metadata = {
   title: "Ankit Mishra",
   description:
     "This is my Netflix portfolio based on inspiration from many developers",
@@ -11,21 +31,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
-      <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+    <html
+      lang="en"
+      className={`${roboto.variable} ${bebas.variable} ${blackOps.variable}`}
+    >
       <body className="main">
         <Navbar />
         <div className="pageContent">{children}</div>

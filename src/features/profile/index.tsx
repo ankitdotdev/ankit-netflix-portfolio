@@ -1,9 +1,23 @@
-import React from 'react'
+"use client";
 
-const PofileContainer = () => {
+import React from "react";
+import HeroBanner from "./sections/HeroBanner/HeroBanner";
+import MainProfile from "./constants/MainProfileData";
+import { useParams } from "next/navigation";
+// import styles from "./index.module.css"
+const ProfileContainer = () => {
+  const { id } = useParams();
+  const heroBannerContent = MainProfile.find((data) => data.role === id);
+
+  if (!heroBannerContent?.heroBanner) {
+    return null;
+  }
+  const mainHeroBannerContent = heroBannerContent.heroBanner;
   return (
-    <div>PofileContainer</div>
-  )
-}
+    <div>
+      <HeroBanner {...mainHeroBannerContent} />
+    </div>
+  );
+};
 
-export default PofileContainer
+export default ProfileContainer;
