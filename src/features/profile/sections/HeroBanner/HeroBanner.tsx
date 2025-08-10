@@ -1,55 +1,23 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import styles from "./HeroBanner.module.css";
 import { HeroBannerTypes } from "../../types/MainProfileTypes";
-import { FaVolumeMute, FaVolumeUp, FaRedo } from "react-icons/fa";
-
+import Image from "next/image";
 const HeroBanner: React.FC<HeroBannerTypes> = ({
-  videoSrc,
+  videoSrc, // You can rename this to imgSrc if you want
   ctas,
   description,
   title,
 }) => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-  const [isMuted, setIsMuted] = useState(false);
-
-  const toggleMute = () => {
-    if (videoRef.current) {
-      videoRef.current.muted = !videoRef.current.muted;
-      setIsMuted(videoRef.current.muted);
-    }
-  };
-
-  const restartVideo = () => {
-    if (videoRef.current) {
-      videoRef.current.currentTime = 0;
-      videoRef.current.play();
-    }
-  };
-
   return (
     <div className={styles.heroBanner}>
-      {/* Background Video */}
-      <video
-        ref={videoRef}
-        className={styles.videoBg}
-        autoPlay
-        muted={isMuted}
-        loop
-        playsInline
-      >
-        <source src={videoSrc} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-
-      {/* Control Buttons */}
-      <div className={styles.videoControls}>
-        <button onClick={toggleMute} title="Toggle Sound">
-          {isMuted ? <FaVolumeMute /> : <FaVolumeUp />}
-        </button>
-        <button onClick={restartVideo} title="Restart Video">
-          <FaRedo />
-        </button>
-      </div>
+      {/* Background GIF/Image */}
+      <Image
+        width={100}
+        height={100}
+        src={videoSrc}
+        alt={title || "Hero Banner"}
+        className={styles.imageBg}
+      />
 
       {/* Overlay Content */}
       <div className={styles.heroContext}>

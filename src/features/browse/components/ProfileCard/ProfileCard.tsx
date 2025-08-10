@@ -4,7 +4,7 @@ import Link from "next/link";
 import style from "./ProfileCard.module.css";
 import { ProfileProps } from "../../types/Roles/Roles";
 
-const RoleCard: React.FC<ProfileProps> = ({ image, route, label }) => {
+const RoleCard: React.FC<ProfileProps> = ({ image, route, label,slug }) => {
   return (
     <Link href={route} className={style.card}>
       <div className={style.imageWrapper}>
@@ -16,6 +16,7 @@ const RoleCard: React.FC<ProfileProps> = ({ image, route, label }) => {
           className={style.image}
           onClick={() => {
             localStorage.setItem("profileImage", label);
+            localStorage.setItem("profileId", slug);
           }}
         />
       </div>
