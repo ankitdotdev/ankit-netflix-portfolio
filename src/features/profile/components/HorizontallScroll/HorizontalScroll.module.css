@@ -1,0 +1,144 @@
+.topPicksContainer {
+  padding: 2rem 4%;
+  background-color: #141414;
+  color: #fff;
+}
+.titleSection {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.topPicksTitle {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.topPicksTitle span {
+  display: inline-flex;
+  align-items: flex-end;
+  font-size: 1rem;
+  color: aqua;
+  transform: translate(-5px, 2px); /* start slightly to the left & down */
+  opacity: 0; /* hidden initially */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.topPicksTitle:hover span {
+  transform: translate(0, 2px); /* slide into place */
+  opacity: 1; /* fade in */
+}
+.sliderWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.topPicksRow {
+  display: flex;
+  gap: 1.2rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+  -webkit-overflow-scrolling: touch; /* better mobile scrolling */
+  scrollbar-width: none; /* Firefox */
+}
+
+.topPicksRow::-webkit-scrollbar {
+  display: none;
+}
+
+.topPicksRow > .card {
+  flex: 0 0 auto;
+  width: 260px;
+  height: 180px;
+}
+
+/* Scroll Buttons */
+.scrollBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  width: 40px; /* fixed width */
+  height: 40px; /* fixed height */
+  padding: 0;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+  transition: background 0.2s ease, opacity 0.2s ease;
+  opacity: 0; /* hidden by default */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrollBtn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* Optional: make visible when hovering sliderWrapper */
+.sliderWrapper:hover .scrollBtn {
+  opacity: 1;
+}
+
+.scrollBtn.left {
+  left: 10px;
+}
+
+.scrollBtn.right {
+  right: 10px;
+}
+.cardWave {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: waveIn 0.6s ease forwards;
+}
+
+@keyframes waveIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Show arrows only on hover for desktop */
+@media (hover: hover) and (pointer: fine) {
+  .sliderWrapper:hover .scrollBtn {
+    opacity: 1;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .topPicksContainer {
+    padding: 1rem 2%;
+  }
+
+  .topPicksTitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .topPicksRow {
+    gap: 0.8rem;
+  }
+
+  .topPicksRow > .card {
+    width: 180px;
+    height: 130px;
+  }
+
+  /* Hide scroll arrows completely on mobile */
+  .scrollBtn {
+    display: none;
+  }
+}

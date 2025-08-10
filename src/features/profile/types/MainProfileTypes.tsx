@@ -14,16 +14,16 @@ export type HeroBannerTypes = {
   ctas: CTA[];
 };
 
-// export type ImageCard = {
-//   image: string;
-//   label: string;
-//   route: string;
-// };
+export type ImageCard = {
+  image: string;
+  label: string;
+  route: string;
+};
 
 export interface MainProfileTypes {
     role:string;
   heroBanner: HeroBannerTypes;
-//   topPicks: ImageCard[];
-//   continueWatching: ImageCard[];
+  topPicks: ImageCard[];
+  continueWatching: ImageCard[];
 }
 
