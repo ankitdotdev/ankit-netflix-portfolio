@@ -88,7 +88,7 @@ const MainProfile: MainProfileTypes[] = [
       },
       {
         image:
-          "https://res.cloudinary.com/doqckc96f/image/upload/v1754840634/download_2_otaukc.jpg",
+          "https://res.cloudinary.com/doqckc96f/image/upload/v1754850231/download_2_1_zm1jme.jpg",
         label: "Games",
         route: "/games",
       },
@@ -184,7 +184,7 @@ const MainProfile: MainProfileTypes[] = [
       },
       {
         image:
-          "https://res.cloudinary.com/doqckc96f/image/upload/v1754840634/download_2_otaukc.jpg",
+          "https://res.cloudinary.com/doqckc96f/image/upload/v1754850231/download_2_1_zm1jme.jpg",
         label: "Games",
         route: "/games",
       },
@@ -274,7 +274,7 @@ const MainProfile: MainProfileTypes[] = [
       },
       {
         image:
-          "https://res.cloudinary.com/doqckc96f/image/upload/v1754840634/download_2_otaukc.jpg",
+          "https://res.cloudinary.com/doqckc96f/image/upload/v1754850231/download_2_1_zm1jme.jpg",
         label: "Games",
         route: "/games",
       },
@@ -355,7 +355,7 @@ continueWatching: [
     route: "/blogs",
   },
   {
-    image: "https://res.cloudinary.com/doqckc96f/image/upload/v1754840634/download_2_otaukc.jpg",
+    image: "https://res.cloudinary.com/doqckc96f/image/upload/v1754850231/download_2_1_zm1jme.jpg",
     label: "Games",
     route: "/games",
   },
