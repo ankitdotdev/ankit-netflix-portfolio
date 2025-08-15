@@ -1,0 +1,174 @@
+.skillCard {
+  width: 200px;
+  height: 200px;
+  background: rgba(30, 30, 30, 0.85);
+  border-radius: 14px;
+  border: 1px solid rgba(229, 9, 20, 0.4);
+  backdrop-filter: blur(6px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  padding: 14px;
+  cursor: pointer;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+  position: relative;
+  animation: cardFadeIn 0.6s ease forwards;
+}
+
+.skillCard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  padding: 2px;
+  background: linear-gradient(135deg, rgba(229, 9, 20, 0.7), rgba(229, 9, 20, 0.2));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.skillCard:hover {
+  transform: translateY(-8px) scale(1.05) rotateX(3deg) rotateY(-3deg);
+  box-shadow: 0 12px 25px rgba(229, 9, 20, 0.5);
+  border-color: rgba(229, 9, 20, 0.8);
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageWrapper span {
+  color: #e50914;
+  font-size: 2.5rem;
+  line-height: 1;
+}
+
+/* Skill Name Animation */
+.skillName {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: 0.3px;
+  animation: letterGlow 0.8s ease forwards;
+}
+
+.skillCard:hover .skillName {
+  animation: letterSpacingExpand 0.4s ease forwards;
+}
+
+/* Context Animation */
+.context {
+  font-size: 0.85rem;
+  color: #bbb;
+  word-wrap: break-word;
+  max-width: 90%;
+  line-height: 1.3;
+  opacity: 0;
+  transform: translateY(6px);
+  animation: contextFadeUp 0.6s ease forwards 0.2s;
+}
+
+.skillCard:hover .context {
+  color: #ddd;
+  text-shadow: 0 0 4px rgba(229, 9, 20, 0.6);
+}
+
+/* Animations */
+@keyframes letterGlow {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes letterSpacingExpand {
+  from {
+    letter-spacing: 0.3px;
+  }
+  to {
+    letter-spacing: 1.5px;
+  }
+}
+
+@keyframes contextFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 1024px) {
+  .skillCard {
+    width: 180px;
+    height: 180px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skillCard {
+    width: 150px;
+    height: 150px;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .imageWrapper span {
+    font-size: 2rem;
+  }
+
+  .skillName {
+    font-size: 0.95rem;
+  }
+
+  .context {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skillCard {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .imageWrapper span {
+    font-size: 1.8rem;
+  }
+
+  .skillName {
+    font-size: 0.9rem;
+  }
+
+  .context {
+    font-size: 0.78rem;
+  }
+}

@@ -1,0 +1,102 @@
+.skillsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.skillTitle {
+  font-size: 2rem;
+  text-decoration: underline;
+  text-decoration-color: #e50914;
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 10px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-15px);
+  animation: fadeSlideDown 0.7s ease-out forwards 0.3s;
+}
+
+.skillsList {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  opacity: 0;
+  animation: fadeInUp 0.9s ease-out forwards 0.5s;
+}
+
+/* Card Floating Idle Animation */
+.skillCard {
+  animation: floatCard 4s ease-in-out infinite;
+}
+
+/* Hover pop effect remains */
+.skillCard:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 10px 20px rgba(229, 9, 20, 0.5);
+}
+
+/* ===== ANIMATIONS ===== */
+
+/* Fade + Slide Up */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade + Slide Down (title effect) */
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Floating Idle Motion */
+@keyframes floatCard {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ===== RESPONSIVENESS ===== */
+
+/* Tablet adjustments */
+@media (max-width: 768px) {
+  .skillTitle {
+    font-size: 1.8rem;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .skillTitle {
+    font-size: 1.5rem;
+  }
+
+  .skillsList {
+    gap: 15px;
+  }
+}
