@@ -1,11 +1,8 @@
-import React from 'react';
+import SkillContainer from "@/features/skills";
+import React from "react";
 
 const Skills = () => {
-    return (
-        <div>
-            <h1>Skills</h1>
-        </div>
-    );
+  return <SkillContainer />;
 };
 
 export default Skills;
