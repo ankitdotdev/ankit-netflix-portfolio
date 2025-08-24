@@ -1,11 +1,8 @@
-import React from 'react';
+import WorkExperienceContainer from "@/features/work-experience";
+import React from "react";
 
 const WorkExperience: React.FC = () => {
-    return (
-        <div>
-            Work Experience
-        </div>
-    );
+  return <WorkExperienceContainer />;
 };
 
 export default WorkExperience;
