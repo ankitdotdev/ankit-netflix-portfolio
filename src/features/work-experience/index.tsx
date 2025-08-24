@@ -1,11 +1,14 @@
 import React from "react";
 import styles from "./index.module.css";
 import { experiences } from "./constants/experienceData";
+import {FaStar } from "react-icons/fa6";
 
 const WorkExperienceContainer = () => {
   return (
     <div className={styles.container}>
-      <h2 className={styles.heading}>📅 Work Experience & Education Timeline</h2>
+      <h2 className={styles.heading}>
+        📅 Work Experience & Education Timeline
+      </h2>
       <div className={styles.timeline}>
         {experiences.map((exp, index) => (
           <div
@@ -23,10 +26,10 @@ const WorkExperienceContainer = () => {
             {/* Content */}
             <div className={styles.content}>
               <h3 className={styles.title}>{exp.title}</h3>
-              
+
               {/* Date inside content (mobile only) - after title */}
               {exp.date && <p className={styles.dateInside}>{exp.date}</p>}
-              
+
               <p className={styles.subtitle}>{exp.subtitle}</p>
               <ul className={styles.description}>
                 {exp.description.map((desc, i) => (
@@ -36,6 +39,11 @@ const WorkExperienceContainer = () => {
             </div>
           </div>
         ))}
+        <div className={`${styles.timelineItem} ${styles.center}`}>
+          <div className={`${styles.iconWrapper} ${styles.gameIcon}`}>
+            <FaStar  />
+          </div>
+        </div>
       </div>
     </div>
   );
