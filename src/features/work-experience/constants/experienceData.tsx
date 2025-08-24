@@ -21,7 +21,7 @@ export const experiences = [
     icon: <FaUsersCog />,
   },
   {
-    title: "Backend Developer",
+    title: "Full Stack Developer",
     subtitle: "Corbin Technology Solutions Pvt Ltd",
     date: "Dec 2023 – Sep 2024",
     description: [
