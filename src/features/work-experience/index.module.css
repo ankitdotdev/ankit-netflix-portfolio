@@ -1,0 +1,371 @@
+.container {   
+  padding: 2rem;   
+  background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);   
+  color: #fff;
+  min-height: 100vh;
+}  
+
+.heading {   
+  font-size: 2.5rem;   
+  font-weight: 800;   
+  margin-bottom: 3rem;   
+  text-align: center;
+  background: linear-gradient(135deg, #e50914 0%, #f40612 50%, #ff6b6b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 4px 20px rgba(229, 9, 20, 0.3);
+  position: relative;
+  animation: glow 2s ease-in-out infinite alternate;
+  letter-spacing: 1px;
+}
+
+.heading::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #e50914, transparent);
+  border-radius: 2px;
+}
+
+.heading::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #e50914, transparent);
+  border-radius: 2px;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 4px 20px rgba(229, 9, 20, 0.3);
+  }
+  to {
+    text-shadow: 0 4px 30px rgba(229, 9, 20, 0.6), 0 0 40px rgba(229, 9, 20, 0.2);
+  }
+}  
+
+.timeline {   
+  position: relative;   
+  margin: 0 auto;   
+  padding: 2rem 0;   
+  width: 90%; 
+}  
+
+/* Timeline line (Netflix-style) */
+.timeline::after {   
+  content: "";   
+  position: absolute;   
+  width: 4px;   
+  background: linear-gradient(180deg, #e50914 0%, #b81d24 50%, #e50914 100%);   
+  top: 0;   
+  bottom: 0;   
+  left: 50%;   
+  margin-left: -2px;
+  border-radius: 2px;
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.3);
+}  
+
+/* Timeline item wrapper */ 
+.timelineItem {   
+  padding: 1rem 2rem;   
+  position: relative;   
+  width: 50%;   
+  z-index: 1; 
+}  
+
+/* Hover scaling effect (Netflix-style) */ 
+.timelineItem:hover .content {   
+  transform: scale(1.03);   
+  transition: all 0.3s ease;   
+  z-index: 5;
+  transform-origin: center center;
+  box-shadow: 0 12px 40px rgba(229, 9, 20, 0.2);
+}
+
+.timelineItem:hover .dateOutside {   
+  transform: scale(1.05);   
+  transition: all 0.3s ease;   
+  z-index: 5;
+  color: #fff;
+  background: rgba(229, 9, 20, 0.2);
+  border-color: rgba(229, 9, 20, 0.5);
+}  
+
+/* Left side */ 
+.left {   
+  left: 0; 
+}  
+
+/* Right side */ 
+.right {   
+  left: 50%; 
+}  
+
+/* Content box (Netflix-style with arrows) */ 
+.content {   
+  padding: 1.5rem;   
+  background: linear-gradient(145deg, #1a1a1a 0%, #2d2d2d 100%);   
+  position: relative;   
+  border-radius: 12px;   
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+  border: 1px solid #333;
+  backdrop-filter: blur(10px);
+}
+
+/* Arrow pointing to icon for left cards */
+.left .content::after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  right: -10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid #2d2d2d;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+/* Arrow pointing to icon for right cards */
+.right .content::after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-right: 10px solid #2d2d2d;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}  
+
+.left .content {   
+  margin-left: auto;   
+  margin-right: 2rem; /* Add margin to prevent moving toward center line on scale */
+}  
+
+.right .content {   
+  margin-right: auto;   
+  margin-left: 2rem; /* Add margin to prevent moving toward center line on scale */
+}  
+
+/* Circle marker (Netflix-style) */ 
+.timelineItem::before {   
+  content: "";   
+  position: absolute;   
+  top: 25px;   
+  right: -12px;   
+  width: 20px;   
+  height: 20px;   
+  background: linear-gradient(135deg, #e50914, #b81d24);   
+  border: 3px solid #0f0f0f;   
+  border-radius: 50%;   
+  z-index: 2;
+  box-shadow: 0 0 15px rgba(229, 9, 20, 0.5);
+}  
+
+.right::before {   
+  left: -12px; 
+}  
+
+/* Card styles (Netflix-style) */ 
+.title {   
+  font-size: 1.3rem;   
+  font-weight: 700;   
+  margin-bottom: 0.5rem;   
+  color: #e50914;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 4px rgba(229, 9, 20, 0.3);
+}  
+
+.subtitle {   
+  font-size: 1rem;   
+  margin-bottom: 0.8rem;   
+  color: #e0e0e0;
+  font-weight: 500;
+  opacity: 0.9;
+}  
+
+.date {   
+  font-size: 0.85rem;   
+  margin-bottom: 0.6rem;   
+  color: #bbb; 
+}  
+
+.description {   
+  margin: 1rem 0 0 0;   
+  padding-left: 0;   
+  font-size: 0.9rem;   
+  line-height: 1.6;
+  list-style: none;
+}
+
+.description li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.8rem;
+  color: #d0d0d0;
+  transition: color 0.3s ease;
+}
+
+.description li::before {
+  content: "▶";
+  position: absolute;
+  left: 0;
+  color: #e50914;
+  font-size: 0.8rem;
+  transition: transform 0.3s ease;
+}
+
+.description li:hover {
+  color: #fff;
+}
+
+.description li:hover::before {
+  transform: translateX(2px);
+}  
+
+/* Icon Wrapper (Netflix-style) */ 
+.iconWrapper {   
+  position: absolute;   
+  top: 20px;   
+  right: -20px;   
+  width: 40px;   
+  height: 40px;   
+  background: linear-gradient(135deg, #e50914, #b81d24);   
+  border-radius: 50%;   
+  display: flex;   
+  align-items: center;   
+  justify-content: center;   
+  color: white;   
+  font-size: 18px;   
+  z-index: 3;   
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.4);   
+  transition: none;
+  border: 3px solid #0f0f0f;
+}  
+
+/* Right side icon */ 
+.right .iconWrapper {   
+  left: -20px;   
+  right: auto; 
+}  
+
+/* Date inside content (mobile only) */
+.dateInside {
+  display: none;
+  font-size: 0.75rem;
+  color: #e50914;
+  font-weight: 600;
+  background: rgba(229, 9, 20, 0.1);
+  padding: 0.3rem 0.6rem;
+  border-radius: 15px;
+  border: 1px solid rgba(229, 9, 20, 0.3);
+  margin: 0 0 0.8rem 0;
+  width: fit-content;
+  letter-spacing: 0.5px;
+} 
+.dateOutside {   
+  position: absolute;   
+  top: 25px;   
+  font-size: 0.85rem;   
+  color: #e50914;   
+  font-weight: 600;
+  background: rgba(229, 9, 20, 0.1);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  border: 1px solid rgba(229, 9, 20, 0.3);
+  backdrop-filter: blur(8px);
+  white-space: nowrap;   
+  transition: transform 0.3s ease, color 0.3s ease;
+  letter-spacing: 0.5px;
+}  
+
+.left .dateOutside {   
+  right: -200px;
+  text-align: center; 
+}  
+
+.right .dateOutside {   
+  left: -200px;
+  text-align: center; 
+}  
+
+/* Mobile responsive */ 
+@media screen and (max-width: 768px) {   
+  .heading {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .heading::before,
+  .heading::after {
+    width: 80px;
+  }
+  
+  .timeline {
+    width: 95%;
+  }
+  
+  .timeline::after {     
+    left: 20px;   
+  }    
+
+  .timelineItem {     
+    width: 100%;     
+    padding-left: 3rem;     
+    padding-right: 0;   
+  }    
+
+  .timelineItem::before {     
+    left: 8px;   
+  }    
+
+  .right {     
+    left: 0;   
+  }
+  
+  .content::after {
+    display: none; /* Hide arrows on mobile */
+  }
+
+  .dateOutside {     
+    position: relative;     
+    top: 2px;     
+    left: 0 !important;     
+    right: 0 !important;     
+    display: block;     
+    margin-top: 0.5rem;     
+    text-align: left;
+    width: fit-content;
+    margin-bottom: 30px;
+  } 
+  
+  .iconWrapper {
+    left: 0px !important;
+    right: auto !important;
+  }
+}
+
+/* Tablet responsive */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .heading {
+    font-size: 2.2rem;
+  }
+  
+  .left .dateOutside {   
+    right: -170px;
+  }  
+
+  .right .dateOutside {   
+    left: -180px;
+  }
+}
