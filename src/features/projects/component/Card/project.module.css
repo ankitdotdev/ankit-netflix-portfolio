@@ -11,17 +11,16 @@
 }
 
 .projectCard:hover {
-  transform: translateY(-8px);
   box-shadow: 0 8px 25px rgba(216, 0, 0, 0.8);
 }
 
 .projectImage {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 250px; /* or 200–250px depending on your card */
+  object-fit: cover; /* crops instead of stretching */
   border-bottom: 2px solid #ff1e1e;
+  display: block;
 }
-
 .projectInfo {
   padding: 1rem 1.2rem;
 }
