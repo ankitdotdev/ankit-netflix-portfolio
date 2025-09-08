@@ -1,12 +1,8 @@
-import React from 'react';
+import ProjectsContainer from "@/features/projects";
+import React from "react";
 
 const ProjectsPage: React.FC = () => {
-    return (
-        <div>
-            <h1>Projects</h1>
-            {/* Add your project components or content here */}
-        </div>
-    );
+  return <ProjectsContainer />;
 };
 
 export default ProjectsPage;
