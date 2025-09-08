@@ -3,26 +3,26 @@ import { ProjectProps } from "../component/Card/project.card";
 export const projects: ProjectProps[] = [
   {
     image:
-      "https://res.cloudinary.com/doqckc96f/image/upload/v1757347924/9954774_gj0d0c.jpg",
-    title: "Tours & Travels",
+      "https://res.cloudinary.com/doqckc96f/image/upload/v1757357040/3d-delivery-robot-working_1_t01mn7.jpg",
+    title: "Chatbot",
     context:
-      "A full-stack travel booking platform where users can explore destinations, book tours, and manage their itineraries with ease.",
-    techStacks: ["NextJs", "NodeJs", "MongoDB", "Express.js", "Typescript"],
+      "An AI-powered chatbot built with NLP integration, enabling real-time conversations, FAQs, and task automation to enhance user experience.",
+    techStacks: ["NextJs", "NodeJs", "MongoDB", "Express.js", "TypeScript"],
   },
   {
     image:
-      "https://res.cloudinary.com/doqckc96f/image/upload/v1757347924/9954774_gj0d0c.jpg",
+      "https://res.cloudinary.com/doqckc96f/image/upload/v1757356886/3d-travel-1920-x-1200-wallpaper-qe00nlcezb7jdg77_wncv1g.webp",
     title: "Tours & Travels",
     context:
-      "A full-stack travel booking platform where users can explore destinations, book tours, and manage their itineraries with ease.",
-    techStacks: ["NextJs", "NodeJs", "MongoDB", "Express.js", "Typescript"],
+      "A full-stack travel booking platform where users can explore destinations, compare packages, and manage their itineraries seamlessly.",
+    techStacks: ["NextJs", "NodeJs", "MongoDB", "Express.js", "TypeScript"],
   },
   {
     image:
-      "https://res.cloudinary.com/doqckc96f/image/upload/v1757347924/9954774_gj0d0c.jpg",
-    title: "Tours & Travels",
+      "https://res.cloudinary.com/doqckc96f/image/upload/v1757356653/supply-chain-representation-still-life_1_1_ugjmpg.jpg",
+    title: "Logistics Portfolio",
     context:
-      "A full-stack travel booking platform where users can explore destinations, book tours, and manage their itineraries with ease.",
-    techStacks: ["NextJs", "NodeJs", "MongoDB", "Express.js", "Typescript"],
+      "A logistics management portfolio showcasing delivery tracking, fleet details, and service highlights through a clean React-based interface.",
+    techStacks: ["ReactJs", "NodeJs", "MongoDB", "Express.js", "JavaScript"],
   },
 ];

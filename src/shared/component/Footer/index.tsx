@@ -14,15 +14,15 @@ const Footer = () => {
     },
     {
       icon: <FaGithub />,
-      route: "mailto:ankitmishra.dev11@gmail.com",
+      route: "https://github.com/ankit00010",
     },
     {
       icon: <FaXTwitter />,
-      route: "mailto:ankitmishra.dev11@gmail.com",
+      route: "https://x.com/dev11_ankit",
     },
     {
       icon: <FaLinkedin />,
-      route: "mailto:ankitmishra.dev11@gmail.com",
+      route: "https://www.linkedin.com/in/ankit00010/",
     },
   ];
 
