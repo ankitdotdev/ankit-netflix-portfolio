@@ -310,62 +310,71 @@ const MainProfile: MainProfileTypes[] = [
         },
       ],
     },
-topPicks: [
-  {
-    image: "https://res.cloudinary.com/doqckc96f/image/upload/v1754749437/guys-skate-pool_1_movwtf.jpg",
-    label: "Skills",
-    route: "/skills",
-  },
-  {
-    image: "https://res.cloudinary.com/doqckc96f/image/upload/v1754830928/hacker-working-darkness_1_cjoc4w.jpg",
-    label: "Projects",
-    route: "/projects",
-  },
-  {
-    image: "https://res.cloudinary.com/doqckc96f/image/upload/v1754836821/scenery-highway-countryside-sunset_1_bexrfu.jpg",
-    label: "Experience",
-    route: "/work-experience",
-  },
-  {
-    image: "https://res.cloudinary.com/doqckc96f/image/upload/v1754837707/cyberpunk-urban-scenery_1_jcxyq1.jpg",
-    label: "Certifications",
-    route: "/skills",
-  },
-  {
-    image: "https://res.cloudinary.com/doqckc96f/image/upload/v1754838279/beautiful-miami-bayside-marketplace-scene_1_z73hqh.jpg",
-    label: "Contact Me",
-    route: "/contact-me",
-  },
-],
+    topPicks: [
+      {
+        image:
+          "https://res.cloudinary.com/doqckc96f/image/upload/v1754749437/guys-skate-pool_1_movwtf.jpg",
+        label: "Skills",
+        route: "/skills",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/doqckc96f/image/upload/v1754830928/hacker-working-darkness_1_cjoc4w.jpg",
+        label: "Projects",
+        route: "/projects",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/doqckc96f/image/upload/v1754836821/scenery-highway-countryside-sunset_1_bexrfu.jpg",
+        label: "Experience",
+        route: "/work-experience",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/doqckc96f/image/upload/v1754837707/cyberpunk-urban-scenery_1_jcxyq1.jpg",
+        label: "Certifications",
+        route: "/skills",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/doqckc96f/image/upload/v1754838279/beautiful-miami-bayside-marketplace-scene_1_z73hqh.jpg",
+        label: "Contact Me",
+        route: "/contact-me",
+      },
+    ],
 
-continueWatching: [
-  {
-    image: "https://res.cloudinary.com/doqckc96f/image/upload/v1754840113/download_1_ercdkp.jpg",
-    label: "Music",
-    route: "/music",
-  },
-  {
-    image: "https://res.cloudinary.com/doqckc96f/image/upload/v1754839695/Reading_Books_Aesthetic_Pictures_vzsodr.jpg",
-    label: "Reading",
-    route: "/reading",
-  },
-  {
-    image: "https://res.cloudinary.com/doqckc96f/image/upload/v1754840389/blogs_alacyr.jpg",
-    label: "Blogs",
-    route: "/blogs",
-  },
-  {
-    image: "https://res.cloudinary.com/doqckc96f/image/upload/v1754850231/download_2_1_zm1jme.jpg",
-    label: "Games",
-    route: "/games",
-  },
-  {
-    image: "https://res.cloudinary.com/doqckc96f/image/upload/v1754841408/Japan_Tokyo_Street_Night_Desktop_Wallpaper_blsndm.jpg",
-    label: "Contact Me",
-    route: "/contact",
-  },
-],
-
+    continueWatching: [
+      {
+        image:
+          "https://res.cloudinary.com/doqckc96f/image/upload/v1754840113/download_1_ercdkp.jpg",
+        label: "Music",
+        route: "/music",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/doqckc96f/image/upload/v1754839695/Reading_Books_Aesthetic_Pictures_vzsodr.jpg",
+        label: "Reading",
+        route: "/reading",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/doqckc96f/image/upload/v1754840389/blogs_alacyr.jpg",
+        label: "Blogs",
+        route: "/blogs",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/doqckc96f/image/upload/v1754850231/download_2_1_zm1jme.jpg",
+        label: "Games",
+        route: "/games",
+      },
+      {
+        image:
+          "https://res.cloudinary.com/doqckc96f/image/upload/v1754841408/Japan_Tokyo_Street_Night_Desktop_Wallpaper_blsndm.jpg",
+        label: "Contact Me",
+        route: "/contact",
+      },
+    ],
   },
 ];
 

@@ -9,7 +9,7 @@ import { SiGoogleanalytics } from "react-icons/si";
 export const experiences = [
   // ✅ Work Experience
   {
-    title: "Sr. Backend Developer (Lead)",
+    title: "Backend Developer (Lead)",
     subtitle: "Stew Digital Solutions",
     date: "May 2025 – Present",
     description: [
