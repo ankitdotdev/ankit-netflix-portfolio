@@ -7,7 +7,7 @@ const WorkExperienceContainer = () => {
   return (
     <div className={styles.container}>
       <h2 className={styles.heading}>
-        📅 Career Timeline
+         Career Timeline
       </h2>
       <div className={styles.timeline}>
         {experiences.map((exp, index) => (
