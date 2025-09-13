@@ -1,42 +1,57 @@
 import Image from "next/image";
 import React from "react";
+import styles from "./project.module.css";
+import { FiExternalLink } from "react-icons/fi";
 
 export interface ProjectProps {
   image: string;
   title: string;
   context: string;
   techStacks: string[];
+  liveLink?: string; // optional live link
 }
-
-import styles from "./project.module.css";
 
 const ProjectCard: React.FC<ProjectProps> = ({
   image,
   title,
   context,
   techStacks,
+  liveLink,
 }) => {
   return (
     <div className={styles.projectCard}>
       {/* Image Section */}
-      <Image
-        className={styles.projectImage}
-        src={image}
-        alt={title}
-        height={50}
-        width={100}
-      />
+      <div className={styles.imageWrapper}>
+        <Image
+          className={styles.projectImage}
+          src={image}
+          alt={title}
+          fill
+          priority
+        />
+      </div>
+
       <div className={styles.projectInfo}>
         <p className={styles.projectTitle}>{title}</p>
         <p className={styles.projectContext}>{context}</p>
 
-        <div className={styles.projectTechStacks}>
+        <ul className={styles.projectTechStacks}>
           {techStacks.map((data, idx) => (
             <li className={styles.projectItem} key={idx}>
               {data}
             </li>
           ))}
-        </div>
+        </ul>
+        {liveLink && (
+          <a
+            href={liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.liveLinkButton}
+          >
+            Live Preview <FiExternalLink className={styles.linkIcon} />
+          </a>
+        )}
       </div>
     </div>
   );

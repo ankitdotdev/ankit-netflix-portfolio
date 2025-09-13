@@ -1,8 +1,74 @@
+/* index.module.css */
+
 .projectContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* responsive grid */
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
   padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto; /* center the grid */
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-items: stretch;
+  align-items: start;
+}
+
+/* Enhanced responsive breakpoints */
+@media (min-width: 1200px) {
+  .projectContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    padding: 3rem 2rem;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  .projectContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2.5rem 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 899px) {
+  .projectContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 2rem 1.5rem;
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .projectContainer {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+    padding: 1.5rem 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 599px) {
+  .projectContainer {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+    max-width: 400px;
+  }
+}
+
+/* Additional enhancements for better visual hierarchy */
+.projectContainer::before {
+  content: "";
+  grid-column: 1 / -1;
+  height: 0;
+  margin-bottom: 1rem;
+}
+
+/* For better spacing on very large screens */
+@media (min-width: 1600px) {
+  .projectContainer {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1600px;
+    gap: 3rem;
+    padding: 4rem 2rem;
+  }
 }

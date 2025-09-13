@@ -106,9 +106,26 @@
   left: 0;
 }
 
+.left .content {
+  margin-left: -1rem;
+  margin-right: 2rem; /* keep gap from timeline */
+}
+
 /* Right side */
 .right {
   left: 50%;
+  padding: 1rem 0; /* keeps width balanced */
+  box-sizing: border-box;
+}
+
+.right .content {
+  margin-left: 2.5rem; /* gap from timeline line */
+  margin-right: 0; /* prevent sticking to screen edge */
+}
+
+.right .iconWrapper {
+  left: -20px;
+  right: auto;
 }
 
 /* Content box (Netflix-style with arrows) */
@@ -117,6 +134,7 @@
   background: linear-gradient(145deg, #1a1a1a 0%, #2d2d2d 100%);
   position: relative;
   border-radius: 12px;
+  width: 100%;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
   border: 1px solid #333;
   backdrop-filter: blur(10px);
@@ -148,17 +166,7 @@
   border-bottom: 8px solid transparent;
 }
 
-.left .content {
-  margin-left: auto;
-  margin-right: 2rem; /* Add margin to prevent moving toward center line on scale */
-}
-
-.right .content {
-  margin-right: auto;
-  margin-left: 2rem; /* Add margin to prevent moving toward center line on scale */
-}
-
-/* Circle marker (Netflix-style) */
+/* Circle marker */
 .timelineItem::before {
   content: "";
   position: absolute;
@@ -175,9 +183,10 @@
 
 .right::before {
   left: -12px;
+  right: auto;
 }
 
-/* Card styles (Netflix-style) */
+/* Card styles */
 .title {
   font-size: 1.3rem;
   font-weight: 700;
@@ -207,6 +216,9 @@
   font-size: 0.9rem;
   line-height: 1.6;
   list-style: none;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto; /* adds hyphenation */
 }
 
 .description li {
@@ -234,7 +246,7 @@
   transform: translateX(2px);
 }
 
-/* Icon Wrapper (Netflix-style) */
+/* Icon Wrapper */
 .iconWrapper {
   position: absolute;
   top: 20px;
@@ -250,7 +262,6 @@
   font-size: 18px;
   z-index: 3;
   box-shadow: 0 0 20px rgba(229, 9, 20, 0.4);
-  transition: none;
   border: 3px solid #0f0f0f;
 }
 
@@ -274,6 +285,7 @@
   width: fit-content;
   letter-spacing: 0.5px;
 }
+
 .dateOutside {
   position: absolute;
   top: 25px;
@@ -299,12 +311,13 @@
   left: -200px;
   text-align: center;
 }
+
 /* Centered last item with game icon */
 .center {
-  position: relative;   /* stay inside the flow instead of absolute */
+  position: relative;
   display: flex;
   justify-content: center;
-  margin-top: 3rem;     /* spacing above */
+  margin-top: 3rem;
 }
 
 .gameIcon {
@@ -313,7 +326,7 @@
   animation: pulse 1.5s infinite;
 }
 
-/* Pulse animation for fun */
+/* Pulse animation */
 @keyframes pulse {
   0% {
     box-shadow: 0 0 10px rgba(0, 200, 83, 0.5);
@@ -325,6 +338,7 @@
     box-shadow: 0 0 10px rgba(0, 200, 83, 0.5);
   }
 }
+
 /* Mobile responsive */
 @media screen and (max-width: 768px) {
   .heading {
@@ -338,7 +352,7 @@
   }
 
   .timeline {
-    width: 95%;
+    width: 113%;
   }
 
   .timeline::after {
@@ -347,37 +361,47 @@
 
   .timelineItem {
     width: 100%;
-    padding-left: 3rem;
-    padding-right: 0;
+    padding: 0 1.5rem 0 2.5rem;
   }
 
   .timelineItem::before {
-    left: 8px;
+    left: 5px;
+    right: auto;
   }
 
   .right {
     left: 0;
+    padding: 0 1.5rem 0 2.5rem;
+  }
+
+  .left .content,
+  .right .content {
+    margin: 0;
   }
 
   .content::after {
-    display: none; /* Hide arrows on mobile */
+    display: none;
   }
 
   .dateOutside {
     position: relative;
-    top: 2px;
-    left: 0 !important;
+    top: 1.4rem;
+    left: 0.8rem !important;
     right: 0 !important;
     display: block;
     margin-top: 0.5rem;
     text-align: left;
     width: fit-content;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   .iconWrapper {
-    left: 0px !important;
+    left: 0 !important;
     right: auto !important;
+  }
+
+  .description {
+    text-align: left; /* avoid large gaps */
   }
 }
 

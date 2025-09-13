@@ -17,7 +17,7 @@ const MainProfile: MainProfileTypes[] = [
           label: "Resume",
           icon: <FaPlay />,
           route:
-            "https://drive.google.com/file/d/1J_ZoqTb83OMFngKq_Z5RAJ1mqZNwuUCa/view?usp=sharing",
+            "https://drive.google.com/file/d/1toU4NazswWTJVHkPUgADRG0WoSkoGCbK/view?usp=sharing",
           variant: "primary",
         },
         {

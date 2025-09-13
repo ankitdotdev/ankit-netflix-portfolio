@@ -17,10 +17,15 @@ import {
   SiMongodb,
   SiRedux,
   SiApachenetbeanside,
+  SiSupabase,
+  SiFirebase,
+  SiPrisma,
+  SiMongoose,
 } from "react-icons/si";
 import { DiVisualstudio } from "react-icons/di";
 import { TbSquareRoundedLetterZFilled } from "react-icons/tb";
 import { TbCircleLetterCFilled } from "react-icons/tb";
+import { RiFlowChart } from "react-icons/ri";
 
 // Languages
 export const languages: SkillSetsProps = {
@@ -72,6 +77,7 @@ export const frontend: SkillSetsProps = {
 export const backend: SkillSetsProps = {
   title: "Backend",
   skillCard: [
+    // 🔹 Core Backend
     {
       icon: <SiNodedotjs />,
       name: "Node.js",
@@ -84,16 +90,48 @@ export const backend: SkillSetsProps = {
     },
     {
       icon: <SiApachenetbeanside />,
-      name: "RESTfulAPI",
-      context: "Web communication standard.",
+      name: "RESTful API",
+      context: "Standard for designing scalable APIs.",
     },
+
+    // 🔹 Databases & ORM/ODM
     {
       icon: <SiMongodb />,
       name: "MongoDB",
       context: "Document-oriented NoSQL database.",
     },
+    {
+      icon: <SiMongoose />,
+      name: "Mongoose",
+      context: "ODM for MongoDB schemas, validation, and queries.",
+    },
+    {
+      icon: <SiPrisma />,
+      name: "Prisma",
+      context: "Type-safe ORM supporting SQL & NoSQL databases.",
+    },
+
+    // 🔹 BaaS Platforms
+    {
+      icon: <SiFirebase />,
+      name: "Firebase",
+      context: "Serverless backend — DB, auth, hosting, cloud functions.",
+    },
+    {
+      icon: <SiSupabase />,
+      name: "Supabase",
+      context: "Open-source Firebase alternative powered by Postgres.",
+    },
+
+    // 🔹 System Design
+    {
+      icon: <RiFlowChart />,
+      name: "System Design",
+      context: "Scalable architecture, design patterns, and microservices.",
+    },
   ],
 };
+
 export const stateManagement: SkillSetsProps = {
   title: "State Management",
   skillCard: [
