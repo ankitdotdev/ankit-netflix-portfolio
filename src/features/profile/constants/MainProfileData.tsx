@@ -3,7 +3,7 @@ import { FaPlay } from "react-icons/fa";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 
 const RESUME_LINK =
-  "https://drive.google.com/file/d/1toU4NazswWTJVHkPUgADRG0WoSkoGCbK/view?usp=sharing";
+  "https://drive.google.com/file/d/1toU4NazswWTJVHkPUgADRG0WoSkoGCbK/view";
 const MainProfile: MainProfileTypes[] = [
   {
     role: "recruiter",
