@@ -50,6 +50,18 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "picfiles.alphacoders.com",
       },
+      {
+        protocol: "https",
+        hostname: "image-cdn-ak.spotifycdn.com",
+      },
+      {
+        protocol: "https",
+        hostname: "thisis-images.spotifycdn.com",
+      },
+      {
+        protocol: "https",
+        hostname: "i.scdn.co",
+      },
     ],
   },
 };
