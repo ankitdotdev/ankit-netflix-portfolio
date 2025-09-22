@@ -1,0 +1,191 @@
+.section {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #21262d 100%);
+  color: white;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add subtle animated background elements */
+.section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   background: radial-gradient(circle at 20% 50%, rgba(229, 9, 20, 0.15) 0%, transparent 50%),
+              radial-gradient(circle at 80% 20%, rgba(229, 9, 20, 0.12) 0%, transparent 50%),
+              radial-gradient(circle at 40% 80%, rgba(229, 9, 20, 0.08) 0%, transparent 50%),
+              #141414; /* Netflix dark background */
+  pointer-events: none;
+  animation: backgroundShift 20s ease-in-out infinite alternate;
+}
+
+@keyframes backgroundShift {
+  0% { opacity: 0.3; }
+  100% { opacity: 0.7; }
+}
+
+.quote {
+  font-style: italic;
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+  color: #e6e6e6;
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+  background: linear-gradient(45deg, #1db954, #1ed760);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: gradientShift 3s ease-in-out infinite alternate;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.heading {
+  font-size: 2rem;
+  margin: 40px 0 24px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: -0.5px;
+}
+
+.heading::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #1db954, #1ed760);
+  margin: 12px auto;
+  border-radius: 2px;
+}
+
+.genreRow {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.genreBtn {
+  background: linear-gradient(145deg, #282828, #1f1f1f);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 500;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.genreBtn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.5s;
+}
+
+.genreBtn:hover {
+  background: linear-gradient(145deg, #1db954, #1ed760);
+  border-color: #1db954;
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(29, 185, 84, 0.4);
+  color: #000;
+  font-weight: 600;
+}
+
+.genreBtn:hover::before {
+  left: 100%;
+}
+
+.genreBtn:active {
+  transform: translateY(-1px) scale(1.02);
+}
+
+.albumGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+  justify-items: center;
+  margin-top: 30px;
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive design improvements */
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 15px;
+  }
+  
+  .quote {
+    font-size: 1.1rem;
+    padding: 0 10px;
+  }
+  
+  .heading {
+    font-size: 1.6rem;
+  }
+  
+  .genreRow {
+    gap: 12px;
+  }
+  
+  .genreBtn {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .albumGrid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .genreRow {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .genreBtn {
+    width: 200px;
+    max-width: 90%;
+  }
+  
+  .albumGrid {
+    grid-template-columns: 1fr;
+    max-width: 280px;
+  }
+}

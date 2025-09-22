@@ -1,0 +1,108 @@
+/* card */
+.certificateCard {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start; /* fix: align-items:left is invalid */
+  padding: 1.6rem;
+  width: 320px;
+  min-height: 220px ;
+  border-radius: 12px;
+
+  /* subtle glassy dark surface */
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.04);
+  backdrop-filter: blur(6px);
+
+  color: #fff;
+  transition: transform .18s ease, box-shadow .18s ease;
+  overflow: visible;
+}
+
+/* red glow behind the card (outside border) */
+.certificateCard::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -10px;
+  right: -10px;
+  top: -8px;
+  bottom: -10px;
+  border-radius: 16px;
+  /* small red radial gradient with blur produces that halo */
+  background: radial-gradient(closest-side at 50% 90%, rgba(255,0,0,0.18), rgba(255,0,0,0.02));
+  filter: blur(20px);
+  pointer-events: none;
+}
+
+/* top row: brand icon on left and link on right */
+.topRow {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+/* brand/icon (big) */
+.certificateBrand {
+  color: rgb(74,144,226);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  flex-shrink: 0;
+}
+
+/* title block */
+.certificationContext {
+  margin-top: 6px;
+  width: 100%;
+}
+
+.title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.02rem;
+  line-height: 1.12;
+  text-transform: uppercase; /* matches the screenshot typography */
+  letter-spacing: 0.01em;
+}
+
+/* external link icon */
+.iconLink {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.certificateIcon {
+  color: #ff2d2d; /* red icon like your screenshot */
+  font-size: 1rem;
+  transition: transform .12s ease;
+}
+
+/* footer text */
+.sourceText {
+  margin: 12px 0 0 0;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.9);
+}
+
+.issuedDateText {
+  margin: 4px 0 0 0;
+  font-size: 0.83rem;
+  color: rgba(255,255,255,0.55);
+}
+
+/* hover polish */
+.certificateCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.6);
+}
+.certificateCard:hover .certificateIcon {
+  transform: scale(1.05);
+}

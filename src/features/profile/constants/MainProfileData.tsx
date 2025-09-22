@@ -50,7 +50,7 @@ const MainProfile: MainProfileTypes[] = [
       },
       // {
       //   image:
-      //     "https://res.cloudinary.com/doqckc96f/image/upload/v1754749437/guys-skate-pool_1_movwtf.jpg",
+      //     "https://res.cloudinary.com/doqckc96f/image/upload/v1754749437/jguys-skate-pool_1_movwtf.jpg",
       //   label: "Recommendations",
       //   route: "/skills",
       // },
@@ -58,7 +58,7 @@ const MainProfile: MainProfileTypes[] = [
         image:
           "https://res.cloudinary.com/doqckc96f/image/upload/v1754837707/cyberpunk-urban-scenery_1_jcxyq1.jpg",
         label: "Certifications",
-        route: "/skills",
+        route: "/certifications",
       },
       {
         image:
@@ -75,18 +75,18 @@ const MainProfile: MainProfileTypes[] = [
         route: "/music",
       },
 
-      {
-        image:
-          "https://res.cloudinary.com/doqckc96f/image/upload/v1754839695/Reading_Books_Aesthetic_Pictures_vzsodr.jpg",
-        label: "Reading",
-        route: "/reading",
-      },
-      {
-        image:
-          "https://res.cloudinary.com/doqckc96f/image/upload/v1754840389/blogs_alacyr.jpg",
-        label: "Blogs",
-        route: "/blogs",
-      },
+      // {
+      //   image:
+      //     "https://res.cloudinary.com/doqckc96f/image/upload/v1754839695/Reading_Books_Aesthetic_Pictures_vzsodr.jpg",
+      //   label: "Reading",
+      //   route: "/reading",
+      // },
+      // {
+      //   image:
+      //     "https://res.cloudinary.com/doqckc96f/image/upload/v1754840389/blogs_alacyr.jpg",
+      //   label: "Blogs",
+      //   route: "/blogs",
+      // },
       {
         image:
           "https://res.cloudinary.com/doqckc96f/image/upload/v1754850231/download_2_1_zm1jme.jpg",
@@ -97,14 +97,14 @@ const MainProfile: MainProfileTypes[] = [
         image:
           "https://res.cloudinary.com/doqckc96f/image/upload/v1754841408/Japan_Tokyo_Street_Night_Desktop_Wallpaper_blsndm.jpg",
         label: "Contact Me",
-        route: "/contact",
+        route: "/contact-me",
       },
     ],
   },
   {
     role: "developer",
     heroBanner: {
-      videoSrc: "https://i.gifer.com/81RA.gif",
+      videoSrc: "https://giffiles.alphacoders.com/119/119969.gif",
 
       title: "Ankit Mishra – Full Stack Developer",
       description:
@@ -153,7 +153,7 @@ const MainProfile: MainProfileTypes[] = [
         image:
           "https://res.cloudinary.com/doqckc96f/image/upload/v1754837707/cyberpunk-urban-scenery_1_jcxyq1.jpg",
         label: "Certifications",
-        route: "/skills",
+        route: "/certifications",
       },
       {
         image:
@@ -170,18 +170,18 @@ const MainProfile: MainProfileTypes[] = [
         route: "/music",
       },
 
-      {
-        image:
-          "https://res.cloudinary.com/doqckc96f/image/upload/v1754839695/Reading_Books_Aesthetic_Pictures_vzsodr.jpg",
-        label: "Reading",
-        route: "/reading",
-      },
-      {
-        image:
-          "https://res.cloudinary.com/doqckc96f/image/upload/v1754840389/blogs_alacyr.jpg",
-        label: "Blogs",
-        route: "/blogs",
-      },
+      // {
+      //   image:
+      //     "https://res.cloudinary.com/doqckc96f/image/upload/v1754839695/Reading_Books_Aesthetic_Pictures_vzsodr.jpg",
+      //   label: "Reading",
+      //   route: "/reading",
+      // },
+      // {
+      //   image:
+      //     "https://res.cloudinary.com/doqckc96f/image/upload/v1754840389/blogs_alacyr.jpg",
+      //   label: "Blogs",
+      //   route: "/blogs",
+      // },
       {
         image:
           "https://res.cloudinary.com/doqckc96f/image/upload/v1754850231/download_2_1_zm1jme.jpg",
@@ -192,14 +192,15 @@ const MainProfile: MainProfileTypes[] = [
         image:
           "https://res.cloudinary.com/doqckc96f/image/upload/v1754841408/Japan_Tokyo_Street_Night_Desktop_Wallpaper_blsndm.jpg",
         label: "Contact Me",
-        route: "/contact",
+        route: "/contact-me",
       },
     ],
   },
   {
     role: "stalker",
     heroBanner: {
-      videoSrc: "https://i.gifer.com/QBnX.gif",
+      videoSrc:
+        "https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOWt0MXJ5a3c4MHZrdDZwdTNwaWM4c2JzdjVwOXdzZ3VnbGx1c29wOCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/4VYZOTE7FK0QOy836I/giphy.gif",
 
       title: "Ankit Mishra – Full Stack Developer",
       description:
@@ -242,7 +243,7 @@ const MainProfile: MainProfileTypes[] = [
         image:
           "https://res.cloudinary.com/doqckc96f/image/upload/v1754837707/cyberpunk-urban-scenery_1_jcxyq1.jpg",
         label: "Certifications",
-        route: "/skills",
+        route: "/certifications",
       },
       {
         image:
@@ -259,18 +260,19 @@ const MainProfile: MainProfileTypes[] = [
         label: "Music",
         route: "/music",
       },
-      {
-        image:
-          "https://res.cloudinary.com/doqckc96f/image/upload/v1754839695/Reading_Books_Aesthetic_Pictures_vzsodr.jpg",
-        label: "Reading",
-        route: "/reading",
-      },
-      {
-        image:
-          "https://res.cloudinary.com/doqckc96f/image/upload/v1754840389/blogs_alacyr.jpg",
-        label: "Blogs",
-        route: "/blogs",
-      },
+      // {
+      //   image:
+      //     "https://res.cloudinary.com/doqckc96f/image/upload/v1754839695/Reading_Books_Aesthetic_Pictures_vzsodr.jpg",
+      //   label: "Reading",
+      //   route: "/reading",
+      // },
+
+      // {
+      //   image:
+      //     "https://res.cloudinary.com/doqckc96f/image/upload/v1754840389/blogs_alacyr.jpg",
+      //   label: "Blogs",
+      //   route: "/blogs",
+      // },
       {
         image:
           "https://res.cloudinary.com/doqckc96f/image/upload/v1754850231/download_2_1_zm1jme.jpg",
@@ -281,14 +283,15 @@ const MainProfile: MainProfileTypes[] = [
         image:
           "https://res.cloudinary.com/doqckc96f/image/upload/v1754841408/Japan_Tokyo_Street_Night_Desktop_Wallpaper_blsndm.jpg",
         label: "Contact Me",
-        route: "/contact",
+        route: "/contact-me",
       },
     ],
   },
   {
     role: "adventure",
     heroBanner: {
-      videoSrc: "https://i.gifer.com/3dof.gif",
+      videoSrc:
+        "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYW94aThkdWt2enVuOWwwbzZ5OHAzNDlkNW5sY2RtZGxjNHJwaGNhdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/aS8ypUweGOXMA/giphy.gif",
 
       title: "Ankit Mishra – Full Stack Developer",
       description:
@@ -331,7 +334,7 @@ const MainProfile: MainProfileTypes[] = [
         image:
           "https://res.cloudinary.com/doqckc96f/image/upload/v1754837707/cyberpunk-urban-scenery_1_jcxyq1.jpg",
         label: "Certifications",
-        route: "/skills",
+        route: "/certifications",
       },
       {
         image:
@@ -348,18 +351,18 @@ const MainProfile: MainProfileTypes[] = [
         label: "Music",
         route: "/music",
       },
-      {
-        image:
-          "https://res.cloudinary.com/doqckc96f/image/upload/v1754839695/Reading_Books_Aesthetic_Pictures_vzsodr.jpg",
-        label: "Reading",
-        route: "/reading",
-      },
-      {
-        image:
-          "https://res.cloudinary.com/doqckc96f/image/upload/v1754840389/blogs_alacyr.jpg",
-        label: "Blogs",
-        route: "/blogs",
-      },
+      // {
+      //   image:
+      //     "https://res.cloudinary.com/doqckc96f/image/upload/v1754839695/Reading_Books_Aesthetic_Pictures_vzsodr.jpg",
+      //   label: "Reading",
+      //   route: "/reading",
+      // },
+      // {
+      //   image:
+      //     "https://res.cloudinary.com/doqckc96f/image/upload/v1754840389/blogs_alacyr.jpg",
+      //   label: "Blogs",
+      //   route: "/blogs",
+      // },
       {
         image:
           "https://res.cloudinary.com/doqckc96f/image/upload/v1754850231/download_2_1_zm1jme.jpg",
@@ -370,7 +373,7 @@ const MainProfile: MainProfileTypes[] = [
         image:
           "https://res.cloudinary.com/doqckc96f/image/upload/v1754841408/Japan_Tokyo_Street_Night_Desktop_Wallpaper_blsndm.jpg",
         label: "Contact Me",
-        route: "/contact",
+        route: "/contact-me",
       },
     ],
   },
