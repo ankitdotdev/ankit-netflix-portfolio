@@ -1,4 +1,4 @@
-import { FaJava } from "react-icons/fa6";
+// import { FaJava } from "react-icons/fa6";
 import { SkillSetsProps } from "../../types/skills/skillsSetTypes";
 import {
   SiTypescript,
@@ -17,9 +17,9 @@ import {
   SiMongodb,
   SiRedux,
   SiApachenetbeanside,
-  SiSupabase,
-  SiFirebase,
-  SiPrisma,
+  // SiSupabase,
+  // SiFirebase,
+  // SiPrisma,
   SiMongoose,
 } from "react-icons/si";
 import { DiVisualstudio } from "react-icons/di";
@@ -41,11 +41,11 @@ export const languages: SkillSetsProps = {
       name: "JavaScript",
       context: "Core language of the web.",
     },
-    {
-      icon: <FaJava />,
-      name: "Java",
-      context: "Object-oriented, general-purpose language.",
-    },
+    // {
+    //   icon: <FaJava />,
+    //   name: "Java",
+    //   context: "Object-oriented, general-purpose language.",
+    // },
   ],
 };
 export const frontend: SkillSetsProps = {
@@ -105,23 +105,23 @@ export const backend: SkillSetsProps = {
       name: "Mongoose",
       context: "ODM for MongoDB schemas, validation, and queries.",
     },
-    {
-      icon: <SiPrisma />,
-      name: "Prisma",
-      context: "Type-safe ORM supporting SQL & NoSQL databases.",
-    },
+    // {
+    //   icon: <SiPrisma />,
+    //   name: "Prisma",
+    //   context: "Type-safe ORM supporting SQL & NoSQL databases.",
+    // },
 
-    // 🔹 BaaS Platforms
-    {
-      icon: <SiFirebase />,
-      name: "Firebase",
-      context: "Serverless backend — DB, auth, hosting, cloud functions.",
-    },
-    {
-      icon: <SiSupabase />,
-      name: "Supabase",
-      context: "Open-source Firebase alternative powered by Postgres.",
-    },
+    // // 🔹 BaaS Platforms
+    // {
+    //   icon: <SiFirebase />,
+    //   name: "Firebase",
+    //   context: "Serverless backend — DB, auth, hosting, cloud functions.",
+    // },
+    // {
+    //   icon: <SiSupabase />,
+    //   name: "Supabase",
+    //   context: "Open-source Firebase alternative powered by Postgres.",
+    // },
 
     // 🔹 System Design
     {

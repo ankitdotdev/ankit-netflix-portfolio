@@ -14,6 +14,8 @@ const ContactMeContainer = () => {
           <div className={styles.profileImageContainer}>
             <Image
               src="/contactMe.jpg"
+              height={1000}
+              width={1000}
               alt="Ankit Mishra - Full Stack Developer"
               className={styles.profileImage}
             />
