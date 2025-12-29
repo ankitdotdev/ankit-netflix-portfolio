@@ -4,6 +4,9 @@ import { IoIosInformationCircleOutline } from "react-icons/io";
 
 const RESUME_LINK =
   "https://drive.google.com/file/d/1GjIm0ce884TpXwPtI7bhGxEav0czL7TC/view?usp=sharing";
+const description =
+  "I’m a full-stack developer with 2+ years of experience building and supporting real-world software systems, driven by solving complex problems and designing solutions that scale through a balance of logic and creativity. I’ve contributed to multiple products and teams, often taking ownership in fast-moving environments, and I’m currently deepening my understanding of cloud and system design to build more reliable, scalable systems over the long term. I’m consistent, driven, and serious about growing into a strong, dependable engineer.";
+
 const MainProfile: MainProfileTypes[] = [
   {
     role: "recruiter",
@@ -12,8 +15,7 @@ const MainProfile: MainProfileTypes[] = [
       videoSrc:
         "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXpqOXo3Ym5lbjI4YXM0eWttbDNvaHBrbnd2NXFzdmg4OWxhcHJsaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/16u7Ifl2T4zYfQ932F/giphy.gif",
       title: "Ankit Mishra – Full Stack Developer",
-      description:
-        "I build intelligent, scalable, and high-performance web applications by blending clean architecture, backend mastery, and modern frontend frameworks. Let’s turn ideas into powerful digital experiences.",
+      description,
       ctas: [
         {
           label: "Resume",
@@ -107,8 +109,7 @@ const MainProfile: MainProfileTypes[] = [
       videoSrc: "https://i.gifer.com/81RA.gif",
 
       title: "Ankit Mishra – Full Stack Developer",
-      description:
-        "I build intelligent, scalable, and high-performance web applications by blending clean architecture, backend mastery, and modern frontend frameworks. Let’s turn ideas into powerful digital experiences.",
+      description,
       ctas: [
         {
           label: "Resume",
@@ -202,8 +203,7 @@ const MainProfile: MainProfileTypes[] = [
       videoSrc: "https://i.gifer.com/QBnX.gif",
 
       title: "Ankit Mishra – Full Stack Developer",
-      description:
-        "I build intelligent, scalable, and high-performance web applications by blending clean architecture, backend mastery, and modern frontend frameworks. Let’s turn ideas into powerful digital experiences.",
+      description,
       ctas: [
         {
           label: "Resume",
@@ -291,8 +291,7 @@ const MainProfile: MainProfileTypes[] = [
       videoSrc: "https://i.gifer.com/3dof.gif",
 
       title: "Ankit Mishra – Full Stack Developer",
-      description:
-        "I build intelligent, scalable, and high-performance web applications by blending clean architecture, backend mastery, and modern frontend frameworks. Let’s turn ideas into powerful digital experiences.",
+      description,
       ctas: [
         {
           label: "Resume",
