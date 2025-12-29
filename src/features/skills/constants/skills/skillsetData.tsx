@@ -17,15 +17,16 @@ import {
   SiMongodb,
   SiRedux,
   SiApachenetbeanside,
-  // SiSupabase,
-  // SiFirebase,
-  // SiPrisma,
+  SiSupabase,
+  SiFirebase,
+  SiPrisma,
   SiMongoose,
 } from "react-icons/si";
 import { DiVisualstudio } from "react-icons/di";
 import { TbSquareRoundedLetterZFilled } from "react-icons/tb";
 import { TbCircleLetterCFilled } from "react-icons/tb";
 import { RiFlowChart } from "react-icons/ri";
+import { FaJava } from "react-icons/fa6";
 
 // Languages
 export const languages: SkillSetsProps = {
@@ -41,11 +42,11 @@ export const languages: SkillSetsProps = {
       name: "JavaScript",
       context: "Core language of the web.",
     },
-    // {
-    //   icon: <FaJava />,
-    //   name: "Java",
-    //   context: "Object-oriented, general-purpose language.",
-    // },
+    {
+      icon: <FaJava />,
+      name: "Java",
+      context: "Object-oriented, general-purpose language.",
+    },
   ],
 };
 export const frontend: SkillSetsProps = {
@@ -105,23 +106,23 @@ export const backend: SkillSetsProps = {
       name: "Mongoose",
       context: "ODM for MongoDB schemas, validation, and queries.",
     },
-    // {
-    //   icon: <SiPrisma />,
-    //   name: "Prisma",
-    //   context: "Type-safe ORM supporting SQL & NoSQL databases.",
-    // },
+    {
+      icon: <SiPrisma />,
+      name: "Prisma",
+      context: "Type-safe ORM supporting SQL & NoSQL databases.",
+    },
 
-    // // 🔹 BaaS Platforms
-    // {
-    //   icon: <SiFirebase />,
-    //   name: "Firebase",
-    //   context: "Serverless backend — DB, auth, hosting, cloud functions.",
-    // },
-    // {
-    //   icon: <SiSupabase />,
-    //   name: "Supabase",
-    //   context: "Open-source Firebase alternative powered by Postgres.",
-    // },
+    // 🔹 BaaS Platforms
+    {
+      icon: <SiFirebase />,
+      name: "Firebase",
+      context: "Serverless backend — DB, auth, hosting, cloud functions.",
+    },
+    {
+      icon: <SiSupabase />,
+      name: "Supabase",
+      context: "Open-source Firebase alternative powered by Postgres.",
+    },
 
     // 🔹 System Design
     {
