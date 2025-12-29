@@ -34,7 +34,7 @@ const ContactMeContainer = () => {
             <p className={styles.location}>Dombivli, Maharashtra</p>
 
             <a
-              href="https://www.linkedin.com/in/ankit00010/"
+              href="https://www.linkedin.com/in/ankit-ravindra-mishra-19050121a/"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.linkedinButton}
