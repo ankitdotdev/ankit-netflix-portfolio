@@ -5,7 +5,7 @@ import { IoIosInformationCircleOutline } from "react-icons/io";
 const RESUME_LINK =
   "https://drive.google.com/file/d/1GjIm0ce884TpXwPtI7bhGxEav0czL7TC/view?usp=sharing";
 const description =
-  "I’m a full-stack developer with 2+ years of experience building and supporting real-world software systems, driven by solving complex problems and designing solutions that scale through a balance of logic and creativity. I’ve contributed to multiple products and teams, often taking ownership in fast-moving environments, and I’m currently deepening my understanding of cloud and system design to build more reliable, scalable systems over the long term. I’m consistent, driven, and serious about growing into a strong, dependable engineer.";
+  "I’m a full-stack developer with 2+ years of experience building and running real-world web applications using Node.js, MySQL, and AWS. I’ve worked on production systems where performance, reliability, and clean APIs actually matter. I enjoy taking ownership, solving messy problems, and turning ideas into working software. My focus now is going deeper into backend architecture and cloud so I can build systems that scale in the real world.";
 
 const MainProfile: MainProfileTypes[] = [
   {
