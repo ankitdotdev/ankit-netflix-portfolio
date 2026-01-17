@@ -11,7 +11,7 @@ export const experiences = [
   {
     title: "Backend Developer (Lead)",
     subtitle: "Stew Digital Solutions Pvt Ltd",
-    date: "May 2025 – Present",
+    date: "May 2025 – Jan 2026",
     description: [
       "Adopted and implemented a scalable, maintainable backend architecture using modern technologies and modular class-based design, enabling long-term system growth.",
       "Led and coordinated a team of 5 developers, managing project planning, task breakdown, execution, and end-to-end delivery for 12+ client projects.",
