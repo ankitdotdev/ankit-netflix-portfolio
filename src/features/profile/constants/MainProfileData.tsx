@@ -3,7 +3,7 @@ import { FaPlay } from "react-icons/fa";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 
 const RESUME_LINK =
-  "https://drive.google.com/file/d/1GjIm0ce884TpXwPtI7bhGxEav0czL7TC/view?usp=sharing";
+  "https://drive.google.com/file/d/1nlsHsx6twMjsoAnTaM_MLICrybXScWYO/view?usp=sharing";
 const description =
   "I’m a full-stack developer with 2+ years of experience building and running real-world web applications using Node.js, MySQL, and AWS. I’ve worked on production systems where performance, reliability, and clean APIs actually matter. I enjoy taking ownership, solving messy problems, and turning ideas into working software. My focus now is going deeper into backend architecture and cloud so I can build systems that scale in the real world.";
 

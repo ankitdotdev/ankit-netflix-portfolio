@@ -14,15 +14,15 @@ const Footer = () => {
     },
     {
       icon: <FaGithub />,
-      route: "https://github.com/ankit00010",
+      route: "https://github.com/ankitdotdev",
     },
     {
       icon: <FaXTwitter />,
-      route: "https://x.com/dev11_ankit",
+      route: "https://x.com/ankit_dotdev",
     },
     {
       icon: <FaLinkedin />,
-      route: "https://www.linkedin.com/in/ankit00010/",
+      route: "https://www.linkedin.com/in/ankitdotdev/",
     },
   ];
 
