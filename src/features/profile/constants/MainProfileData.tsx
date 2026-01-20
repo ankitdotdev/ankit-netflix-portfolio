@@ -3,10 +3,9 @@ import { FaPlay } from "react-icons/fa";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 
 const RESUME_LINK =
-  "https://drive.google.com/file/d/1nlsHsx6twMjsoAnTaM_MLICrybXScWYO/view?usp=sharing";
+  "https://drive.google.com/file/d/1oVSJXeHVse4zyTych33HFAvhZnVsX0pV/view?usp=sharing";
 const description =
-  "I’m a full-stack developer with 2+ years of experience building and running real-world web applications using Node.js, MySQL, and AWS. I’ve worked on production systems where performance, reliability, and clean APIs actually matter. I enjoy taking ownership, solving messy problems, and turning ideas into working software. My focus now is going deeper into backend architecture and cloud so I can build systems that scale in the real world.";
-
+        "Software Engineer with 1.6 years of experience building end-to-end web applications. I solve problems, turn requirements into real features, and focus on clean, performant code. User-centric, ownership-driven, and committed to shipping maintainable products. Currently pursuing an MBA in Business Analytics."
 const MainProfile: MainProfileTypes[] = [
   {
     role: "recruiter",
