@@ -27,6 +27,9 @@ export const metadata = {
   title: "Ankit Mishra",
   description:
     "This is my Netflix portfolio based on inspiration from many developers",
+  icons: {
+    icon: "./favicon.png",
+  },
 };
 
 export default function RootLayout({
