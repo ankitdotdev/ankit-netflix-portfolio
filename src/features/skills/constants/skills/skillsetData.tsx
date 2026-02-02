@@ -21,6 +21,9 @@ import {
   SiFirebase,
   SiPrisma,
   SiMongoose,
+  SiMysql,
+  SiAmazon,
+  SiDocker,
 } from "react-icons/si";
 import { DiVisualstudio } from "react-icons/di";
 import { TbSquareRoundedLetterZFilled } from "react-icons/tb";
@@ -28,107 +31,139 @@ import { TbCircleLetterCFilled } from "react-icons/tb";
 import { RiFlowChart } from "react-icons/ri";
 import { FaJava } from "react-icons/fa6";
 
-// Languages
 export const languages: SkillSetsProps = {
   title: "Languages",
   skillCard: [
     {
       icon: <SiTypescript />,
       name: "TypeScript",
-      context: "Typed superset of JavaScript.",
+      context: "Strongly typed superset of JavaScript.",
     },
     {
       icon: <SiJavascript />,
       name: "JavaScript",
-      context: "Core language of the web.",
+      context: "Core programming language for web and backend.",
     },
     {
       icon: <FaJava />,
       name: "Java",
-      context: "Object-oriented, general-purpose language.",
+      context: "Object-oriented language for backend applications.",
     },
   ],
 };
+
 export const frontend: SkillSetsProps = {
   title: "Frontend",
   skillCard: [
     {
-      icon: <SiNextdotjs />,
-      name: "Next.js",
-      context: "React framework for SSR & SSG.",
-    },
-    {
       icon: <SiReact />,
       name: "React",
-      context: "UI library for building components.",
+      context: "Component-based UI library.",
     },
     {
-      icon: <SiCss3 />,
-      name: "CSS3",
-      context: "Cascading Style Sheets for styling.",
+      icon: <SiNextdotjs />,
+      name: "Next.js",
+      context: "React framework for SSR, SSG, and performance.",
     },
     {
       icon: <SiHtml5 />,
       name: "HTML5",
-      context: "Markup language for the web.",
+      context: "Markup language for structuring web content.",
+    },
+    {
+      icon: <SiCss3 />,
+      name: "CSS3",
+      context: "Styling language for responsive layouts.",
     },
   ],
 };
 
 export const backend: SkillSetsProps = {
-  title: "Backend",
+  title: "Backend & APIs",
   skillCard: [
-    // 🔹 Core Backend
     {
       icon: <SiNodedotjs />,
       name: "Node.js",
-      context: "JavaScript runtime for backend.",
+      context: "JavaScript runtime for scalable backend services.",
     },
     {
       icon: <SiExpress />,
       name: "Express.js",
-      context: "Minimal backend framework for Node.js.",
+      context: "Minimal framework for REST APIs.",
     },
     {
       icon: <SiApachenetbeanside />,
-      name: "RESTful API",
-      context: "Standard for designing scalable APIs.",
+      name: "RESTful APIs",
+      context: "Designing scalable and stateless APIs.",
     },
+  ],
+};
 
-    // 🔹 Databases & ORM/ODM
+export const databases: SkillSetsProps = {
+  title: "Databases & ORMs",
+  skillCard: [
+    {
+      icon: <SiMysql />,
+      name: "MySQL",
+      context: "Relational database using SQL.",
+    },
     {
       icon: <SiMongodb />,
       name: "MongoDB",
-      context: "Document-oriented NoSQL database.",
-    },
-    {
-      icon: <SiMongoose />,
-      name: "Mongoose",
-      context: "ODM for MongoDB schemas, validation, and queries.",
+      context: "NoSQL document-oriented database.",
     },
     {
       icon: <SiPrisma />,
       name: "Prisma",
-      context: "Type-safe ORM supporting SQL & NoSQL databases.",
+      context: "Type-safe ORM for SQL & NoSQL databases.",
     },
+    {
+      icon: <SiMongoose />,
+      name: "Mongoose",
+      context: "ODM for MongoDB schemas and queries.",
+    },
+  ],
+};
 
-    // 🔹 BaaS Platforms
+export const cloudDevOps: SkillSetsProps = {
+  title: "Cloud & DevOps",
+  skillCard: [
+    {
+      icon: <SiAmazon />,
+      name: "AWS",
+      context: "Cloud platform for compute, storage, and networking.",
+    },
+    {
+      icon: <SiDocker />,
+      name: "Docker",
+      context: "Containerization for consistent deployments.",
+    },
+  ],
+};
+
+export const baas: SkillSetsProps = {
+  title: "Backend as a Service",
+  skillCard: [
     {
       icon: <SiFirebase />,
       name: "Firebase",
-      context: "Serverless backend — DB, auth, hosting, cloud functions.",
+      context: "Serverless backend with auth, DB, and functions.",
     },
     {
       icon: <SiSupabase />,
       name: "Supabase",
-      context: "Open-source Firebase alternative powered by Postgres.",
+      context: "Open-source backend powered by PostgreSQL.",
     },
+  ],
+};
 
-    // 🔹 System Design
+export const systemDesign: SkillSetsProps = {
+  title: "System Design",
+  skillCard: [
     {
       icon: <RiFlowChart />,
       name: "System Design",
-      context: "Scalable architecture, design patterns, and microservices.",
+      context: "Scalable architectures, design patterns, and microservices.",
     },
   ],
 };
@@ -144,29 +179,30 @@ export const stateManagement: SkillSetsProps = {
     {
       icon: <SiRedux />,
       name: "Redux",
-      context: "Predictable state container for JavaScript apps.",
+      context: "Predictable state container for applications.",
     },
     {
       icon: <TbCircleLetterCFilled />,
       name: "Context API",
-      context: "Built-in React feature for global state.",
+      context: "Built-in React global state solution.",
     },
   ],
 };
+
 export const tools: SkillSetsProps = {
   title: "Tools",
   skillCard: [
     { icon: <SiGit />, name: "Git", context: "Version control system." },
-    { icon: <SiGithub />, name: "GitHub", context: "Code hosting platform." },
+    { icon: <SiGithub />, name: "GitHub", context: "Code hosting and collaboration." },
     {
       icon: <SiPostman />,
       name: "Postman",
-      context: "API testing & collaboration tool.",
+      context: "API testing and debugging.",
     },
     {
       icon: <DiVisualstudio />,
       name: "VS Code",
-      context: "Code editor of choice.",
+      context: "Primary development environment.",
     },
   ],
 };
@@ -177,8 +213,13 @@ export const deployment: SkillSetsProps = {
     {
       icon: <SiVercel />,
       name: "Vercel",
-      context: "Hosting for Next.js & frontend apps.",
+      context: "Frontend and Next.js deployments.",
     },
-    { icon: <SiNetlify />, name: "Netlify", context: "Web hosting & CI/CD." },
+    {
+      icon: <SiNetlify />,
+      name: "Netlify",
+      context: "Hosting with CI/CD support.",
+    },
   ],
 };
+
