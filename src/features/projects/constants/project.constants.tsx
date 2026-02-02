@@ -3,6 +3,51 @@ import { ProjectProps } from "../component/Card/project.card";
 export const projects: ProjectProps[] = [
   {
     image:
+      "https://res.cloudinary.com/doqckc96f/image/upload/v1770013817/2176_mh6h39.jpg",
+    title: "Learning Managment System",
+    context:
+      "Corporate learning management system with course and content management, role-based hierarchy, assignments and assessments, certifications, gated learning, gamification, live notifications, and managerial progress analytics.",
+    techStacks: [
+      "Next.js",
+      "Node.js",
+      "MongoDB",
+      "Express.js",
+      "TypeScript",
+      "AWS",
+      "Docker",
+    ],
+    liveLink:
+      "https://www.google.com/search?q=ajanta+pharama+gyaan+mitra&oq=ajanta+pharama+gyaan+mitra&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgkIARAhGAoYoAEyCQgCECEYChigAdIBCDc4NDVqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/doqckc96f/image/upload/v1770014070/3970606_au8zyo.jpg",
+    title: "AI-Powered LMS & Question Management System",
+    context:
+      "Built an AI-powered LMS and exam platform with role-based access, reusable question bank, mock tests, performance analytics, and Gemini-based feedback; owned backend and system design.",
+    techStacks: ["Next.js", "Node.js", "MongoDB", "Express.js", "TypeScript"],
+    liveLink: "https://lms-client-snakalp-v-1.vercel.app/",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/doqckc96f/image/upload/v1770014588/58235_mdhg3d.jpg",
+    title: "E-commerce Platform",
+    context:
+      "End-to-end e-commerce and CMS platform with REST APIs, secure payment integration, admin dashboard for product management, order processing, enquiry handling, and continuous production support with performance improvements.",
+    techStacks: ["Next.js", "Node.js", "MongoDB", "Express.js", "TypeScript"],
+    liveLink: "https://www.stewbin.com/",
+  },
+  {
+    image:
+      "https://res.cloudinary.com/doqckc96f/image/upload/v1757785680/travel-concept-with-baggage_tlfb37.jpg",
+    title: "Tours & Travels",
+    context:
+      "CMS-driven travel booking platform enabling destination discovery, package comparison, lead generation, booking management, and end-to-end itinerary control.",
+    techStacks: ["NextJs", "NodeJs", "MongoDB", "Express.js", "TypeScript"],
+    liveLink: "https://www.kirtiholidays.net/",
+  },
+  {
+    image:
       "https://res.cloudinary.com/doqckc96f/image/upload/v1757782994/prod2_gobgea.webp",
     title: "WhatsApp Chatbot",
     context:
@@ -11,15 +56,7 @@ export const projects: ProjectProps[] = [
     liveLink:
       "https://www.youtube.com/watch?list=PLI5jeOEq9xCNFClaiMy4j_x-IruRipngD&v=ZYrZ032HY6E&feature=youtu.be",
   },
-  {
-    image:
-      "https://res.cloudinary.com/doqckc96f/image/upload/v1757785680/travel-concept-with-baggage_tlfb37.jpg",
-    title: "Tours & Travels",
-    context:
-      "A full-stack travel booking platform where users can explore destinations, compare packages, and manage their itineraries seamlessly.",
-    techStacks: ["NextJs", "NodeJs", "MongoDB", "Express.js", "TypeScript"],
-    liveLink: "https://www.kirtiholidays.net/",
-  },
+
   {
     image:
       "https://res.cloudinary.com/doqckc96f/image/upload/v1757356653/supply-chain-representation-still-life_1_1_ugjmpg.jpg",
@@ -29,5 +66,4 @@ export const projects: ProjectProps[] = [
     techStacks: ["ReactJs", "NodeJs", "MongoDB", "Express.js", "JavaScript"],
     liveLink: "https://aalogistics.vercel.app/",
   },
-
 ];

@@ -3,9 +3,9 @@ import { FaPlay } from "react-icons/fa";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 
 const RESUME_LINK =
-  "https://drive.google.com/file/d/1oVSJXeHVse4zyTych33HFAvhZnVsX0pV/view?usp=sharing";
+  "https://drive.google.com/file/d/1pL9Vp5IF5ysxDQzc1cUVrwBi58BZFjAo/view?usp=sharing";
 const description =
-        "Software Engineer with 1.6 years of experience building end-to-end web applications. I solve problems, turn requirements into real features, and focus on clean, performant code. User-centric, ownership-driven, and committed to shipping maintainable products. Currently pursuing an MBA in Business Analytics."
+  "Fullstack developer with 1.5 years of experience building end-to-end web applications. I solve problems, turn requirements into real features, and focus on clean, performant code. User-centric, ownership-driven, and committed to shipping maintainable products. Currently upskilling in system design and cloud technologies to build scalable systems.";
 const MainProfile: MainProfileTypes[] = [
   {
     role: "recruiter",
