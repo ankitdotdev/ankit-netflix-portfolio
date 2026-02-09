@@ -1,10 +1,10 @@
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   gap: 2rem;
   padding: 10px;
   justify-items: center;
-  align-items: center;
+  align-items: start;
   text-align: center;
 }
 
@@ -12,18 +12,10 @@
   list-style: none;
 }
 
-/* 📱 Small screens: 1 column */
+/* 📱 Slightly tighter spacing on small screens */
 @media screen and (max-width: 480px) {
   .grid {
-    grid-template-columns: 1fr;
     gap: 1rem;
-    padding: 5px;
-  }
-}
-
-/* 📱 Tablets: 2 columns */
-@media screen and (max-width: 768px) and (min-width: 481px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
+    padding: 0 12px;
   }
 }
