@@ -1,93 +1,49 @@
-/* ✅ Default - Desktop and Large Screens */
 .card {
-  border-radius: 5rem;
+  width: 100%;
+  max-width: 160px;       /* grid controls size, this just caps it */
+  margin: 0 auto;
+  padding: 8px;
   cursor: pointer;
-  height: 10vw;
-  margin: 10px;
-  max-height: 200px;
-  max-width: 200px;
-  min-height: 84px;
-  min-width: 84px;
-  position: relative;
+  text-align: center;
   text-decoration: none;
-  width: 10vw;
-  padding: 10px;
 }
 
 .imageWrapper {
-  width: 154px;
-  height: 154px;
-  margin: 0 auto;
+  width: 100%;
+  aspect-ratio: 1 / 1;    /* perfect square */
   overflow: hidden;
-  position: relative;
-  border-radius: 10px;
-  box-sizing: border-box;
-  transition: box-shadow 0.1s ease;
+  border-radius: 12px;
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
 }
 
 .imageWrapper:hover {
   box-shadow: 0 0 0 2px white;
+  transform: scale(1.05);
 }
 
 .image {
   width: 100%;
   height: 100%;
-  display: block;
   object-fit: cover;
+  display: block;
 }
 
 .label {
   color: white;
-  display: block;
-  font-size: 1.3vw;
-  font-weight: 400;
-  line-height: 1.2em;
-  margin: 0.6em 0;
-  min-height: 1.8em;
-  overflow: hidden;
-  text-align: center;
-  text-overflow: ellipsis;
-  list-style: none;
+  font-size: 0.95rem;
+  margin-top: 8px;
+  line-height: 1.2;
+  word-break: break-word;
 }
 
-/* ✅ Medium screens like tablets (481px - 768px) */
-@media screen and (max-width: 768px) {
-  .imageWrapper {
-    width: 130px;
-    height: 130px;
-  }
-
-  .label {
-    font-size: 1rem;
-  }
-
-  .card {
-    width: auto;
-    height: auto;
-    max-width: 160px;
-    max-height: 190px;
-    padding: 8px;
-    margin: 8px;
-  }
-}
-
-/* ✅ Small screens / phones (below 480px) */
+/* 📱 Mobile */
 @media screen and (max-width: 480px) {
-  .imageWrapper {
-    width: 120px;
-    height: 120px;
+  .card {
+    max-width: 120px;
+    padding: 6px;
   }
 
   .label {
-    font-size: 0.9rem;
-  }
-
-  .card {
-    width: auto;
-    height: auto;
-    max-width: 140px;
-    max-height: 180px;
-    padding: 6px;
-    margin: 6px;
+    font-size: 0.75rem;
   }
 }
