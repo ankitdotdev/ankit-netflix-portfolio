@@ -9,12 +9,8 @@
   padding: 40px 20px;
 }
 
-/* 📱 Mobile Optimization */
 @media screen and (max-width: 480px) {
   .container {
-    min-height: 100svh;        /* better for mobile browsers */
-    justify-content: flex-start;
-    gap: 12px;                 /* a bit more breathing room */
-    padding: 24px 12px 32px;   /* bottom padding prevents crowding */
+    gap: 10px;
   }
 }

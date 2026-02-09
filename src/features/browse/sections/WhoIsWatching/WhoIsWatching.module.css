@@ -12,7 +12,6 @@
 
 @media screen and (max-width: 480px) {
   .title {
-    margin-bottom: 1.2rem;
-    font-size: clamp(1.4rem, 5vw, 2rem);
+    gap: 4rem;
   }
 }
