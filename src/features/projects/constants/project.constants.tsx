@@ -30,6 +30,22 @@ export const projects: ProjectProps[] = [
   },
   {
     image:
+      "https://res.cloudinary.com/doqckc96f/image/upload/v1771610592/futuristic-ai-dashboard-display_1_m0qmrv.jpg",
+    title: "AI-Powered Tasks Generator (Mini Planning Tool)",
+    context:
+      "Built an AI-powered planning tool that converts feature ideas into structured user stories and engineering tasks. Users can generate, edit, group, and export tasks, with templates and recent spec history. Designed the full backend and AI integration.",
+    techStacks: [
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "TypeScript",
+      "Hugging Face API",
+    ],
+    liveLink: "https://ai-task-generator-client.vercel.app/",
+  },
+  {
+    image:
       "https://res.cloudinary.com/doqckc96f/image/upload/v1770014588/58235_mdhg3d.jpg",
     title: "E-commerce Platform",
     context:
